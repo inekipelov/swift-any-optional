@@ -40,13 +40,10 @@ Then add `AnyOptional` to your target dependencies:
 import AnyOptional
 
 let title: String? = "Hello, world!"
-let subtitle: String? = "Lorem ipsum"
 let caption: String? = nil
 
 print(title.isNil)    // false
 print(title.isSome)   // true
-print(subtitle.isNil) // false
-print(subtitle.isSome) // true
 print(caption.isNil)  // true
 print(caption.isSome) // false
 
