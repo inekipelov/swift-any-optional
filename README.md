@@ -15,25 +15,6 @@ value is `nil` without knowing the concrete `Wrapped` type at compile time.
   <a href="https://developer.apple.com/visionos/"><img src="https://img.shields.io/badge/visionOS-1.0+-000000?logo=apple" alt="visionOS 1.0+"></a>
 </p>
 
-## Installation
-
-Add the package to your `Package.swift` dependencies:
-
-```swift
-.package(url: "https://github.com/inekipelov/swift-any-optional.git", from: "1.0.0")
-```
-
-Then add `AnyOptional` to your target dependencies:
-
-```swift
-.target(
-    name: "YourTarget",
-    dependencies: [
-        "AnyOptional"
-    ]
-)
-```
-
 ## Usage
 
 ```swift
@@ -50,4 +31,12 @@ print(caption.isSome) // false
 let values: [AnyOptional] = [title, subtitle, caption]
 let missingCount = values.filter(\.isNil).count
 print(missingCount) // 1
+```
+
+## Installation
+
+Add the package to your `Package.swift` dependencies:
+
+```swift
+.package(url: "https://github.com/inekipelov/swift-any-optional.git", from: "1.0.0")
 ```
